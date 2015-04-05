@@ -1,61 +1,86 @@
-<!doctype html>
+<!-- ***************************************************
+*
+* Auteur: Marti Leo
+* version: 1.0
+* Date: 21.09.2012
+*
+*************************************************** -->
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Virtual-crossroad by StixHollow</title>
+    <head>
+        <title>Virtual Crossroad</title>
+        <link rel="shortcut icon" id="icon" href="./img/ico/MiniLight.ico" />
+        <meta http-equiv="Content-Type" content="text/html; charset=Utf-8" />
+        <meta name="author" content="Marti" />
+        <meta name="description"
+              content="Management crossroad in JS and HTML5" />
+        <meta name="keywords"
+              content="HTML5, JS, Gestion, Crossroad" />
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Virtual-crossroad</h1>
-        <p>A visual virtual crossroad</p>
+        <link rel="stylesheet" href="./CrossV1.css" />
 
-        <p class="view"><a href="https://github.com/StixHollow/Virtual-Crossroad">View the Project on GitHub <small>StixHollow/Virtual-Crossroad</small></a></p>
+        <script type="text/javascript" src="./js/CarsClass.js"></script>
+        <script type="text/javascript" src="./js/CF_Function.js"></script>
 
 
-        <ul>
-          <li><a href="https://github.com/StixHollow/Virtual-Crossroad/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/StixHollow/Virtual-Crossroad/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/StixHollow/Virtual-Crossroad">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h1>
-<a id="virtual-crossroad" class="anchor" href="#virtual-crossroad" aria-hidden="true"><span class="octicon octicon-link"></span></a>Virtual-Crossroad</h1>
+    </head>
+    <body>
+        <div id="Simulation">
+            <canvas id="CF" width="800" height="800" onClick="SelectCarToInfo(event); /*alert(MousePlace(event));*/ ">
+                Kill Exloprer
+            </canvas>
+        </div>
+        <div id="ControlBorad" >
+            <img id="ButtonPieton" src="./img/Button/PietonButtonOff.png" alt="Button for Walker" onClick="ButtonPietonActive(true);" width="106px" height="225" />
 
-<p>A simulation of a crossroad. Visual management of a crossroad.
-This was for a work in school</p>
+            <div id="Time">
 
-<h1>
-<a id="image" class="anchor" href="#image" aria-hidden="true"><span class="octicon octicon-link"></span></a>Image</h1>
+                <h3>Time :</h3>
+                <canvas id="Timer" width="120" height="25" ></canvas>
 
-<blockquote>
-<p>I have creat a lot of image for this project. These images are for of use.</p>
-</blockquote>
+            </div>
+            <div id="Speed">
+                <h3>Speed :</h3>
+                <p id="ScreenSpeed">45</p>
+                <input type="range" id="MaxSpeedRegular" value="45" min="5" max="80" step="5" onChange="AdaptSpeed();"/>
 
-<h1>
-<a id="tech" class="anchor" href="#tech" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tech</h1>
+            </div>
+            <div id="Ratio">
+                <h3>Ratio (Car/Minute) :</h3>
+                <p id="ScreenRatio">60</p>
+                <input type="range" id="MaxRatioRegular" value="60" min="0" max="120" step="5" onChange="AdaptRatio();"/>
 
-<ul>
-<li>HTML5</li>
-<li>CSS3</li>
-<li>JavaScript</li>
-</ul>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/StixHollow">StixHollow</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
-  </body>
+            </div>
+            <div id="WaitingTime">
+                <h3>Waiting time between the lights :</h3>
+                <p id="ScreenTime">30</p>
+                <input type="number" id="WaitingTimeRegular" value="30" min="0" max="500" step="5" onChange="AdaptWaiting();"/>
+
+            </div>
+            <div id="CarCross">
+                <h3>Car in the crossroad : </h3>
+                <p id="CarIn">0</p>
+                <h3>Total car have cross this corssroad : </h3>
+                <p id="CarTot">0</p>
+
+            </div>
+            <table id="TableInfo">
+                <tr>
+                    <td><img id="ImgDemoCar" src="" alt="" height="34" width="70" /></td>
+                </tr>
+                <tr><td>Id</td><td id="idCar">NaN</td></tr>
+                <tr><td>Position X</td><td id="xCar">NaN</td></tr>
+                <tr><td>Position Y</td><td id="yCar">NaN</td></tr>
+                <tr><td>Width</td><td id="widthCar">NaN</td></tr>
+                <tr><td>Height</td><td id="heightCar">NaN</td></tr>
+                <tr><td>Enter</td><td id="enterCar">NaN</td></tr>
+                <tr><td>Direction</td><td id="directionCar">NaN</td></tr>
+                <tr><td>Speed</td><td id="speedCar">NaN</td></tr>
+                <tr><td>Number of car in enter</td><td id="nbenterCar">NaN</td></tr>
+            </table>
+
+        </div>
+        <script type="text/javascript" src="./js/ini.js"></script>
+    </body>
+
 </html>

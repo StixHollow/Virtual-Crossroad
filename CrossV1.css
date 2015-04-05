@@ -1,0 +1,54 @@
+/* 
+    Document   : CrossV1
+    Created on : 9 nov. 2012, 10:25:29
+    Author     : MARTI_LEO
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+/* COOOOOOOOOOOOOONTROL */
+#ControlBorad{
+    padding-left: 50%
+}
+
+/* STYLE FOR TABLE INFO */
+
+#TableInfo{
+    padding-right: 10%;
+}
+#ImgDemoCar{
+    text-align: center;
+}
+/*
+#Timer{
+    position: absolute; 
+    padding-left: 5%;
+    padding-top: 0%;
+}
+*/
+#ButtonPieton{
+   position: relative;
+   float: right;
+       
+}
+
+#ScreenTime{
+    display: none;
+}
+
+/* Simulation */
+#Simulation{
+    position: absolute;
+}
+
+
+
+
