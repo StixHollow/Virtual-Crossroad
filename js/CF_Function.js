@@ -1,6 +1,6 @@
 /*******************************************************************************
  *                                                                             *
- *		Author        = Marti;                                         *
+ *		Author        = Hollow;                                         *
  *		File          = CF_Function.js;                                *
  *		Description   = Libraries of function for the crossroad;       *
  *		Version       = 0.1 ALPHA 14.09.2012                           *
@@ -10,7 +10,7 @@
  ******************************************************************************/
 
 /*****************************************************************
-		Author        = Marti;
+		Author        = Hollow;
 		Function      = Movement;
 		Description   = Make all change in the page;
 		Return        = /
@@ -58,7 +58,7 @@ function Movement(){
 }
  
 /*****************************************************************
-		Author        = Marti;
+		Author        = Hollow;
 		Function      = DrawScreen;
 		Description   = Draw The principal screen and basic image;
 		Return        = /
@@ -102,7 +102,7 @@ function DrawScreen(){
 
 /*******************************************************************
  
-		Author      = Marti;
+		Author      = Hollow;
 		Function    = SelectCarToInfo;
 		Description = Select Car to get info 
 		Return      = x - y
@@ -135,7 +135,7 @@ function SelectCarToInfo(event){
 
 /*******************************************************************
  
-		Author      = Marti;
+		Author      = Hollow;
 		Function    = UpdateInformationCar;
 		Description = Upadte the information of the car
 		Return      = 
@@ -165,7 +165,7 @@ function UpdateInformationCar(){
 
 /*******************************************************************
  
-		Author      = Marti;
+		Author      = Hollow;
 		Function    = DrawTimer;
 		Description = Draw the timer in the documentation 
 		Return      = x - y
@@ -191,7 +191,7 @@ function DrawTimer(){
 }
 /*******************************************************************
  
-		Author      = Marti;
+		Author      = Hollow;
 		Function    = LoadImage;
 		Description = Load the src, Width and Height of every image;
 		Return      = /
@@ -252,7 +252,7 @@ function LoadImage() {
 
 /*******************************************************************
  
-		Author      = Marti;
+		Author      = Hollow;
 		Function    = getLight;
 		Description = Grep if the light is green or red
 		Parm		= Which enter in the crossroad
@@ -281,7 +281,7 @@ function getLight(which) {
 
 /*******************************************************************
  
-		Author      = Marti;
+		Author      = Hollow;
 		Function    = ActiveLight;
 		Description = Make the change of the light
 		Return      = 
@@ -328,7 +328,7 @@ function ActiveLight() {
 
 /*******************************************************************
  
-		Author      = Marti;
+		Author      = Hollow;
 		Function    = ButtonPietonActive;
 		Description = if some one click one pieton button
 		Return      = x - y
@@ -366,7 +366,7 @@ function PauseScreen(){
 
 /*******************************************************************
  
-		Author      = Marti;
+		Author      = Hollow;
 		Function    = AdaptSpeed;
 		Description = Adapt the speed of car whit the range
 		Return      = 
@@ -400,7 +400,7 @@ function AdaptRatio() {
 
 /*******************************************************************
  
-		Author      = Marti;
+		Author      = Hollow;
 		Function    = AdaptWaiting;
 		Description = Adapt the the waiting time
 		Return      = 
@@ -416,7 +416,7 @@ function AdaptWaiting() {
 
 /*******************************************************************
  
-		Author      = Marti;
+		Author      = Hollow;
 		Function    = MousePlace;
 		Description = Send the position of the mouse
 		Return      = x - y
@@ -433,7 +433,7 @@ function MousePlace(event){
 
 /*******************************************************************
  
-		Author      = Marti;
+		Author      = Hollow;
 		Function    = DocThePlace;
 		Description = Document the page;
 		Return      = 
@@ -477,7 +477,7 @@ function print_r(theObj) {
 
 /*******************************************************************
  
-		Author      = Marti;
+		Author      = Hollow;
 		Function    = CutImg;
 		Description = Cut the sprite;
 		Return      = 
@@ -531,7 +531,7 @@ function CutImg(img, x, y, h, w, which, NBx, NBy) {
 
 /*******************************************************************
  
-		Author      = Marti Leo;
+		Author      = Hollow;
 		Function    = UnsetArray;
 		Description = Delete a entry in a tab
 		Parm		= obj
