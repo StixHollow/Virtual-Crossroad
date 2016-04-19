@@ -1,6 +1,6 @@
 /************************************************************************************************************************************
     *                                                                                                                                *
-    *		Author        = Marti;                                                                                               *
+    *		Author        = Hollow                                                                                               *
     *		File          = CarsClass.js;                                                                                        *
     *		Description   = Class for use the car;                                                                               *
     *		Version       = 0.1 ALPHA 28.09.2012
